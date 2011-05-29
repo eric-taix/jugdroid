@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/home_root" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical">
+		<LinearLayout android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:padding="6dip"
+			android:isScrollContainer="true" android:layout_height="fill_parent">
+
+			<LinearLayout android:orientation="horizontal"
+				android:layout_height="wrap_content" android:layout_weight="1"
+				android:layout_gravity="center" android:layout_width="fill_parent">
+
+				<org.jug.montpellier.jugdroid.ui.NewInfoButton android:id="@+id/home_btn_schedule" style="@style/DashboardButton"
+					android:text="Calendrier" android:drawableTop="@drawable/home_btn_schedule"
+					android:layout_weight="1" />
+				<org.jug.montpellier.jugdroid.ui.NewInfoButton android:id="@+id/home_btn_sessions" style="@style/DashboardButton"
+					android:text="Sessions" android:drawableTop="@drawable/home_btn_sessions"
+					android:layout_weight="1" />
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="1">
+
+				<org.jug.montpellier.jugdroid.ui.NewInfoButton android:id="@+id/home_btn_partners" style="@style/DashboardButton"
+					android:text="Partenaires" android:drawableTop="@drawable/home_btn_partners"
+					android:layout_weight="1" />
+				<org.jug.montpellier.jugdroid.ui.NewInfoButton android:id="@+id/home_btn_members" style="@style/DashboardButton"
+					android:text="Membres" android:drawableTop="@drawable/home_btn_members"
+					android:layout_weight="1" />
+			</LinearLayout>
+			<LinearLayout android:orientation="horizontal"
+				android:layout_width="fill_parent" android:layout_height="wrap_content"
+				android:layout_weight="1">
+				<org.jug.montpellier.jugdroid.ui.NewInfoButton style="@style/DashboardButton"
+					android:text="News" android:layout_weight="1" android:id="@+id/home_btn_news" android:drawableTop="@drawable/home_btn_news"/>
+				<org.jug.montpellier.jugdroid.ui.NewInfoButton android:id="@+id/home_btn_about" style="@style/DashboardButton"
+					android:text="A propos" android:drawableTop="@drawable/home_btn_about"
+					android:layout_weight="1" />
+			</LinearLayout>
+		</LinearLayout>
+</LinearLayout>
